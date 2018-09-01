@@ -1,0 +1,39 @@
+.list_iconUp{
+    width:9px;
+    height:5px;
+    background:url("../img/index/icon_splice.png") no-repeat -480px -120px;
+}
+.list_iconDown{
+    width:9px;
+    height:5px;
+    background:url("../img/index/icon_splice.png") no-repeat -450px -120px;
+}
+.checkBox_style{
+    width:16px;
+    height:16px;
+    vertical-align:middle;
+}
+.badge_new{
+    width:17px;
+    height:9px;
+    background:url(../img/index/icon_splice.png) no-repeat -240px -240px;
+}
+.nav_active{
+    background:#169af3;
+}
+.play{
+    width:12px;
+    height:14px;
+    background:url(../img/index/icon_splice.png) no-repeat 0 0px;
+}
+.play:hover{
+    background:url(../img/index/icon_splice.png) no-repeat 0 -30px ;
+}
+.load{
+    width:15px;
+    height:15px;
+    background:url(../img/index/icon_splice.png) no-repeat -90px 0 ;
+}
+.load:hover{
+    background:url(../img/index/icon_splice.png) no-repeat -90px -30px;
+}

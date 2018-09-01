@@ -1,0 +1,127 @@
+div.carousel-inner>div>a>img{
+    height:445px;
+}
+#section>div.carousel>div:last-child{
+    background:rgba(0,0,0,.3);
+    bottom: 0;
+}
+#jxgd>div>div>ul>li{
+    width:160px;
+}
+#jxgd>div>div>img{
+    width:330px;
+    height:330px;
+}
+#jxgd>div>div>ul{
+    height:330px;
+}
+.aOfp{
+    width:160px;
+    height:30px;
+    background-image:url(../img/index/cptTBg.png);
+    background-size:100%;
+    position: absolute;
+    right:0px;
+    top:0;
+}
+.aOfp>div:first-child{
+    width:14px;
+    height:14px;
+    background:url(../img/index/sprite.png) no-repeat ;
+    background-position: 0 -267px;
+}
+.aOfp+div{
+    width:100%;
+    height:50px;
+    background:rgba(0,0,0,.3);
+    position:absolute;
+    bottom: 0;
+}
+[data-play=play]{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.3);
+    z-index: 1000;
+}
+[data-play=play]>div:first-child{
+    width:36px;
+    height:36px;
+    background:url(../img/index/sprite.png) 0 -401px;
+    cursor: pointer;
+}
+[data-play=play]{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.3);
+    z-index: 1000;
+}
+div.media>div:last-child{
+    width:7px;
+    height:16px;
+    background:url(../img/index/sprite.png) no-repeat 0 -322px;
+    position: absolute;
+    right:5px;
+    top:42px;
+    cursor: pointer;
+}
+#xgsf>div:nth-child(1)>div:nth-child(3)>div>span:first-child{
+    width:12px;
+    height:14px;
+    background:url(../img/index/sprite.png) no-repeat 0 -303px;
+    position: relative;
+    top:-2px;
+}
+#xgsf>div:nth-child(1)>div:nth-child(3)>div:hover>span:nth-child(2){
+    color:white !important;
+}
+#xgsf>div:nth-child(2)>div:first-child>ul>li:hover{
+    color:#009af3;
+    background:#f5f8fb;
+    border-radius:3px;
+    cursor:pointer;
+}
+#xgsf>div:nth-child(2)>div:first-child>ul>li:hover>span:first-child>span{
+    display:none;
+}
+.play{
+    width:12px;
+    height:14px;
+    background:url(../img/index/icon_splice.png) no-repeat 0 0px;
+}
+.play:hover{
+    background:url(../img/index/icon_splice.png) no-repeat 0 -30px ;
+}
+.load{
+    width:15px;
+    height:15px;
+    background:url(../img/index/icon_splice.png) no-repeat -90px 0 ;
+}
+.load:hover{
+    background:url(../img/index/icon_splice.png) no-repeat -90px -30px;
+}
+.intr{
+    width:100%;
+    height:50px;
+    background:rgba(0,0,0,.3);
+    position:absolute;
+    bottom: 0;
+}
+.singerName{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    color: #fff;
+    font-size:14px;
+    background:rgba(0,0,0,.1);
+}
+.singerName:hover{
+    background:rgba(0,0,0,.3);
+}
