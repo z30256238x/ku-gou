@@ -15,3 +15,13 @@
 .background_color{
     background:#169af3;
 }
+input{
+    outline: none;
+    border:0;
+}
+a{
+    color:#B6BBBF;
+}
+a:hover{
+    color:#169af3;
+}

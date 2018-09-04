@@ -1,0 +1,12 @@
+.download:hover{
+    box-shadow: 0 0 18px rgba(0,0,0,.25);
+}
+#bg-1{
+    background:#F8F8F8;
+}
+#bg-2{
+    background:#F1F1F1;
+}
+.box-size{
+    width:300px;
+}

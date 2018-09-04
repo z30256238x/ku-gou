@@ -25,10 +25,92 @@
                     <a href="#" class="text-muted small">会员中心</a>
                 </div>
                 <div class="col-auto align-self-center">
-                        <a href="#" class="btn btn-outline-primary btn-sm">登录</a>
+                        <button data-toggle="modal" data-target="#login" class="btn btn-outline-primary btn-sm ">登录</button>
+                </div>
+                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" id="login">
+                    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header mx-4">
+                                <h5 class="modal-title">登录酷狗音乐</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-4">
+                                <form action="">
+                                    <div class="border p-2 mb-2 rounded">账号&nbsp;:&nbsp;<input class="" type="text" placeholder="用户名/手机/邮箱"></div>
+
+                                    <div class="border p-2 rounded">
+                                        密码&nbsp;:&nbsp;<input type="password" placeholder="请输入密码">
+                                        <a class="float-right text-muted small" href="#">忘记密码</a>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="checkbox" class="align-middle">
+                                        <span class="small ml-1">下次自动登录</span>
+                                        <a href="#" class="small text-muted float-right mr-2" data-toggle="modal" data-target="#register">立即注册</a>
+                                    </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-primary btn-block">登录</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="border-top mx-4">
+                                <div class="d-flex my-4 align-items-center">
+                                    <span class="small text-muted pl-2">其它方式登录:</span>
+                                    <a href="#" id="mode-qq" class="mx-2"></a>
+                                    <a href="#" id="mode-wxin"></a>
+                                    <a href="#" class="ml-auto small">用户协议</a>
+                                    <a href="#" class="small mx-1">隐私政策</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-auto align-self-center pl-0">
-                        <a href="#" class="btn btn-sm btn-outline-secondary ">注册</a>
+                    <button data-toggle="modal" data-target="#register" class="btn btn-outline-secondary btn-sm ">注册</button>
+                </div>
+                <div class="modal fade" tabindex="-1" role="dialog" id="register">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header mx-4">
+                                <h5 class="modal-title">手机注册酷狗音乐</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-4">
+                                <form action="">
+                                    <div class=" p-1 mb-2 rounded">
+                                        手机号码&nbsp;:&nbsp;
+                                        <input class="border pl-3 py-1" type="text" placeholder="请正确输入手机号码">
+                                    </div>
+
+                                    <div class=" p-1 rounded d-flex align-items-center">
+                                        短信验证&nbsp;:&nbsp;&nbsp;
+                                        <input type="text" class="border pl-3 py-1">
+                                        <button class="btn btn-secondary disabled ml-2">获取短信</button>
+                                    </div>
+                                    <div class=" p-1 rounded">
+                                        用户密码&nbsp;:&nbsp;
+                                        <input type="password" class="border pl-3 py-1">
+                                    </div>
+                                    <div class=" p-1 rounded">
+                                        确认密码&nbsp;:&nbsp;
+                                        <input type="password" class="border pl-3 py-1">
+                                    </div>
+                                    <div class=" p-1 rounded">
+                                        用户性别&nbsp;:&nbsp;
+                                        <input type="radio" name="gender" checked>男
+                                        <input type="radio" name="gender">女
+                                    </div>
+                                    <div class="d-flex align-items-center"><input type="checkbox" checked><span class="small ml-1">我已经认真阅读并同意</span> <a href="#" class="mr-2 ml-auto small">用户协议</a><a href="#" class="small">隐私政策</a></div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-primary btn-block">注册</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,10 +119,10 @@
 <div id="last_row">
     <div class="container">
         <div class="row position-relative">
-            <div class="col-6 text-left px-0" >
-                <a href="#" class="text-white px-4">首页</a>
-                <a href="#" class="text-white px-4">榜单</a>
-                <a href="#" class="text-white px-4">下载客户端</a>
+            <div class="col-6 px-0" >
+                <a href="http://localhost:3000/index.html?lid=1" class="text-white px-4 float-left active" data-id="1">首页</a>
+                <a href="http://localhost:3000/list.html?lid=2" class="text-white px-4 float-left" data-id="2">榜单</a>
+                <a href="http://localhost:3000/download.html?lid=3" class="text-white px-4 float-left" data-id="3">下载客户端</a>
                 <div class="d_down d-inline-block">
                     <a href="#" class="text-white px-4">更多 <img src="img/index/arrowMored.png" alt=""/>
                     </a>

@@ -6,14 +6,8 @@ $(function(){
         url:"http://localhost:3000/header.html"
     }).then(res=>{
         $("#header").html(res);
-        $("#header_container").find(":text").css("width","294px");
-        $("#last_row>div>div>div:first-child").children(":not(:last-child)").hover(function(){
-            var $nav=$(this);
-            $nav.addClass("active")
-        },function(){
-            var $nav=$(this);
-            $nav.removeClass("active")
-        })
+        $("#header_container>div>div:first>div>div>div").find(":text").css("width","294px");
+
         $("#last_row>div>div>div:first-child>div.d_down").hover(function(){
                 var $nav=$(this);
                 $nav.children().first().addClass("active");
@@ -32,5 +26,16 @@ $(function(){
         },function(){
             $(this).addClass("text-muted");
         });
+        $("#last_row>div>div>div:first-child").children(":not(:last-child)").hover(function(){
+            var $nav=$(this);
+            $nav.css({"background":"#0c8ed9"})
+        },function(){
+            var $nav=$(this);
+            $nav.css("background","#2c323b")
+        }).each(function(){
+            if($(this).data("id")==location.search.slice(-1)){
+                $(this).addClass("active").siblings().removeClass("active")
+            }
+        })
     })
 })

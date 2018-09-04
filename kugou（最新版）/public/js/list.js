@@ -24,4 +24,16 @@ $(function(){
         $(this).children(":gt(3):not(:last)").addClass("d-none");
         }
         );
+    $("#child_1>div:first>div:nth-child(2)>div:nth-child(2)").on("click",function(){
+        $(this).siblings().children(":checkbox").prop("checked",$(this).find(":checkbox").prop("checked"));
+    })
+    $("#child_1>div:first>div:eq(1)>div:gt(1)").find(":checkbox").on("click",function(){
+        var nchecked=$("#child_1>div:first>div:eq(1)>div:gt(1)").find("input:not(:checked)")
+        console.log(nchecked.val())
+        if(nchecked.val()===undefined){
+            $("#child_1>div:first>div:eq(1)>div:eq(1) input").prop("checked",true)
+        }else{
+            $("#child_1>div:first>div:eq(1)>div:eq(1) input").prop("checked",false)
+        }
+    })
 });

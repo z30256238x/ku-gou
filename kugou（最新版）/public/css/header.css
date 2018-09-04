@@ -15,7 +15,7 @@
 }
 .active{
     color:white !important;
-    background:#0c8ed9 ;
+    background:#0c8ed9 !important;
 }
 #last_row>div>div>div:last-child>a{
     display: inline-block;
@@ -41,11 +41,21 @@
 #d1{
     position: absolute;
     background:#2c323b;
-    left:301px;
+    left:288px;
     top:54px;
     width:95.4px;
     z-index: 1000;
 }
 #d1>li:hover{
     background:orangered;
+}
+#mode-qq{
+     width:16px ;
+     height:16px;
+     background:url("../img/header/kg_popup_splice01.png") no-repeat -25px -125px;
+ }
+#mode-wxin{
+    width:16px;
+    height:16px;
+    background:url("../img/header/kg_popup_splice01.png") no-repeat -125px -125px;
 }
