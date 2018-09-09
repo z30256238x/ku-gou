@@ -9057,3 +9057,6 @@ a.text-dark:hover, a.text-dark:focus {
 .border_dashed{
   border:1px dashed black;
 }
+.overflow{
+  overflow:hidden;
+}

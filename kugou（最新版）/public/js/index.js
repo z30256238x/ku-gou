@@ -41,4 +41,13 @@ $(function(){
             $(id).show().siblings().hide();
         }
     );
+    $("#hy>li").click(function(){
+       open("http://localhost:3000/detailAudio.html","__blank");
+    });
+    $("#carousel>:last>ul>li").click(function(){
+        open("httP://localhost:3000/download.html","__blank")
+    });
+    $("#bangdan>div").click(function(){
+        open("http://localhost:3000/list.html?lid=2")
+    })
 });
