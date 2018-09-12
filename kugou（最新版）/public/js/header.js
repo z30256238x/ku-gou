@@ -32,9 +32,15 @@ $(function(){
         },function(){
             var $nav=$(this);
             $nav.css("background","#2c323b")
-        }).each(function(){
-            if($(this).data("id")==location.search.slice(-1)){
-                $(this).addClass("active").siblings().removeClass("active")
+        }).click(function(){
+            sessionStorage["id"]=$(this).data("id")
+            }).each(function(){
+            if($(this).data("id")==sessionStorage["id"])
+            {
+                $(this).addClass("active").siblings().removeClass("active");
+                sessionStorage["id"]="";
+            }else{
+                $(this).removeClass("active");
             }
         })
     })

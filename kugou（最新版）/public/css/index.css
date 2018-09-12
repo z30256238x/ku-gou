@@ -52,15 +52,6 @@ div.carousel-inner>div>a>img{
     background:url(../img/index/sprite.png) 0 -401px;
     cursor: pointer;
 }
-[data-play=play]{
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.3);
-    z-index: 1000;
-}
 div.media>div:last-child{
     width:7px;
     height:16px;

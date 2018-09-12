@@ -1,0 +1,18 @@
+.checkBox_style{
+    width:14px;
+    height:14px;
+    vertical-align:baseline;
+}
+.play{
+    width:19px;
+    height:19px;
+    background:url(../img/playlist/other.png) no-repeat -19px 0;
+}
+.share{
+    width:19px;
+    height:19px;
+    background:url(../img/playlist/other.png) no-repeat 0 0;
+}
+.playhover{
+    background:rgba(0,0,0,.1);
+}

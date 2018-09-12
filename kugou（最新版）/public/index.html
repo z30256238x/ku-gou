@@ -24,11 +24,11 @@
                 <li data-target="#carousel" data-slide-to="4"></li>
             </ul>
             <div class="carousel-inner">
-                <div class="carousel-item active"><a href="#"><img src="img/index/carousel_2.jpg" alt="" class="w-100"/></a></div>
-                <div class="carousel-item"><a href="#"><img src="img/index/carousel_3.jpg" alt="" class="w-100"/></a></div>
-                <div class="carousel-item"><a href="#"><img src="img/index/carousel_4.jpg" alt="" class="w-100"/></a></div>
-                <div class="carousel-item"><a href="#"><img src="img/index/carousel_5.jpg" alt="" class="w-100"/></a></div>
-                <div class="carousel-item"><a href="#"><img src="img/index/carousel_6.jpg" alt="" class="w-100"/></a></div>
+                <div class="carousel-item active"><a href="#"><img :src="carousel[0].img_url" alt="" class="w-100"/></a></div>
+                <div class="carousel-item"><a href="#"><img :src="carousel[1].img_url" alt="" class="w-100"/></a></div>
+                <div class="carousel-item"><a href="#"><img :src="carousel[2].img_url" alt="" class="w-100"/></a></div>
+                <div class="carousel-item"><a href="#"><img :src="carousel[3].img_url" alt="" class="w-100"/></a></div>
+                <div class="carousel-item"><a href="#"><img :src="carousel[4].img_url" alt="" class="w-100"/></a></div>
             </div>
             <a href="#carousel" class="carousel-control-prev" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -58,43 +58,43 @@
             </div>
             <div class="row bg-white">
                 <div class="col-auto px-0 position-relative">
-                    <img src="img/index/jx_big.jpg"alt=""/>
+                    <img :src="jxgd[0].img_url"alt=""/>
                     <div class="aOfp d-flex justify-content-end align-items-center">
                         <div></div>
-                        <div class="text-white px-2">103.5万</div>
+                        <div class="text-white px-2">{{jxgd[0].clickCount|numFilter}}</div>
                     </div>
                     <div class="px-2 d-flex flex-column justify-content-center">
-                        <h6 class="font-weight-normal text-white small p-x m-0 text-t">往后的人生，做好一偏头就能看见你</h6>
-                        <h6 class="font-weight-normal text-muted p-0 m-0">layis-eo</h6>
+                        <h6 class="font-weight-normal text-white small p-x m-0 text-t">{{jxgd[0].title}}</h6>
+                        <h6 class="font-weight-normal text-muted p-0 m-0">{{jxgd[0].singer}}</h6>
                     </div>
                     <div data-play="play" class="invisible d-flex justify-content-center align-items-center cursor-p">
-                        <div class=""></div>
+                        <div><a :href="jxgd[0].url" class="d-inline-block w-100 h-100"></a></div>
                     </div>
                 </div>
                 <div class="col-2 px-0">
                     <ul class="list-unstyled d-flex flex-column align-items-center justify-content-between mb-0">
-                        <li class="position-relative"><img src="img/index/jx_small1.jpg" alt="" class="w-100"/>
+                        <li class="position-relative"><img :src="jxgd[1].img_url" alt="" class="w-100"/>
                             <div class="aOfp d-flex justify-content-end align-items-center">
                                 <div></div>
-                                <div class="text-white px-2">30.5万</div>
+                                <div class="text-white px-2">{{jxgd[1].clickCount|numFilter}}</div>
                             </div>
                             <div class="px-2 d-flex flex-column justify-content-center">
-                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">路边理发店的镇店欧美BGM</h6>
-                                <h6 class="text-muted p-0 m-0 font-weight-normal small pt-1">墨小宝</h6>
+                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">{{jxgd[1].title}}</h6>
+                                <h6 class="text-muted p-0 m-0 font-weight-normal small pt-1">{{jxgd[1].singer}}</h6>
                             </div>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div class=""></div>
                             </div>
                         </li>
                         <li class="position-relative">
-                            <img src="img/index/20180724120352933299.jpg" alt="" class="w-100"/>
+                            <img :src="jxgd[2].img_url" alt="" class="w-100"/>
                             <div class="aOfp d-flex justify-content-end align-items-center">
                                 <div></div>
-                                <div class="text-white px-2">20.1万</div>
+                                <div class="text-white px-2">{{jxgd[2].clickCount|numFilter}}</div>
                             </div>
                             <div class="px-2 d-flex flex-column justify-content-center">
-                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">古风治愈女友选秀，你喜欢哪一款？</h6>
-                                <h6 class="font-weight-normal text-muted p-0 m-0 small pt-1">值得听</h6>
+                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">{{jxgd[2].title}}</h6>
+                                <h6 class="font-weight-normal text-muted p-0 m-0 small pt-1">{{jxgd[2].singer}}</h6>
                             </div>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div class=""></div>
@@ -105,28 +105,28 @@
                 <div class="col-2 px-0">
                     <ul class="list-unstyled d-flex flex-column align-items-center justify-content-between mb-0">
                         <li class="position-relative">
-                            <img src="img/index/20180724175109794461.jpg" alt="" class="w-100"/>
+                            <img :src="jxgd[3].img_url" alt="" class="w-100"/>
                             <div class="aOfp d-flex justify-content-end align-items-center">
                                 <div></div>
-                                <div class="text-white px-2">15.2万</div>
+                                <div class="text-white px-2">{{jxgd[3].clickCount|numFilter}}</div>
                             </div>
                             <div class="px-2 d-flex flex-column justify-content-center">
-                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">传统乐器邂逅流行，别样不失风韵</h6>
-                                <h6 class="font-weight-normal text-muted p-0 m-0 small pt-1">上晏</h6>
+                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">{{jxgd[3].title}}</h6>
+                                <h6 class="font-weight-normal text-muted p-0 m-0 small pt-1">{{jxgd[3].singer}}</h6>
                             </div>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div class=""></div>
                             </div>
                         </li>
                         <li class="position-relative">
-                            <img src="img/index/20180726132157277082.jpg" alt="" class="w-100"/>
+                            <img :src="jxgd[4].img_url" alt="" class="w-100"/>
                             <div class="aOfp d-flex justify-content-end align-items-center">
                                 <div></div>
-                                <div class="text-white px-2">5.6万</div>
+                                <div class="text-white px-2">{{jxgd[4].clickCount|numFilter}}</div>
                             </div>
                             <div class="px-2 d-flex flex-column justify-content-center">
-                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">全世界都在说中国话！韩国歌曲中文版选集</h6>
-                                <h6 class="font-weight-normal text-muted p-0 m-0 small pt-1">白色镜框</h6>
+                                <h6 class=" text-truncate font-weight-normal text-white small p-x m-0 text-t"style="width:80px;">{{jxgd[4].title}}</h6>
+                                <h6 class="font-weight-normal text-muted p-0 m-0 small pt-1">{{jxgd[4].singer}}</h6>
                             </div>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div class=""></div>
@@ -137,15 +137,15 @@
                 <div class="col-4 pr-0 d-flex flex-column justify-content-between" id="bangdan">
                     <div class="media">
                         <div class="position-relative">
-                            <img src="img/index/T1M4h4BKKj1RCvBVdK.jpg_240x240.jpg" class="align-bottom" width="100" height="100" alt=""/>
+                            <img :src="rmbd[0].img_url" class="align-bottom" width="100" height="100" alt=""/>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div></div>
                             </div>
                         </div>
                         <div class="media-body align-self-end pl-2 cursor-p">
-                            <h6 class="small font-weight-bold">酷狗飙升榜</h6>
+                            <h6 class="small font-weight-bold">{{rmbd[0].title}}</h6>
                             <ul class="list-unstyled" style="width:180px">
-                                <li class="small">1.TFBOTS-喜欢你</li>
+                                <li class="small text-truncate">1.TFBOTS-喜欢你</li>
                                 <li class="small text-truncate">2.郭俊辰-冷殿下【惹上冷殿下网络剧插曲】</li>
                             </ul>
                         </div>
@@ -153,15 +153,15 @@
                     </div>
                     <div class="media position-relative">
                         <div class="position-relative">
-                            <img src="img/index/T1fHd4BXd_1RCvBVdK.jpg_240x240.jpg" style="width:100px;height:100px" class="align-bottom" alt=""/>
+                            <img :src="rmbd[1].img_url" style="width:100px;height:100px" class="align-bottom" alt=""/>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div></div>
                             </div>
                         </div>
                         <div class="media-body align-self-end pl-2 cursor-p">
-                            <h6 class="small font-weight-bold">酷狗TOP500</h6>
+                            <h6 class="small font-weight-bold">{{rmbd[1].title}}</h6>
                             <ul class="list-unstyled" style="width:180px">
-                                <li class="small">1.小潘潘、小峰峰-学猫叫</li>
+                                <li class="small text-truncate">1.小潘潘、小峰峰-学猫叫</li>
                                 <li class="small text-truncate">王被车-陷阱</li>
                             </ul>
                         </div>
@@ -169,13 +169,13 @@
                     </div>
                     <div class="media position-relative">
                         <div class="position-relative">
-                            <img src="img/index/T1Fpd4BKbg1RCvBVdK.jpg_240x240.jpg" style="width:100px;height:100px" class="align-bottom" alt=""/>
+                            <img :src="rmbd[2].img_url" style="width:100px;height:100px" class="align-bottom" alt=""/>
                             <div data-play="play" class="invisible d-flex justify-content-center align-items-center">
                                 <div></div>
                             </div>
                         </div>
                         <div class="media-body align-self-end pl-2 cursor-p">
-                            <h6 class="small font-weight-bold">网络红歌榜</h6>
+                            <h6 class="small font-weight-bold">{{rmbd[2].title}}</h6>
                             <ul class="list-unstyled" style="width:180px">
                                 <li class="small text-truncate">1.金南岭-逆流成河【我在锡林郭勒等你电视剧插曲】</li>
                                 <li class="small text-truncate">2.郭俊辰-冷殿下【惹上冷殿下网络剧插曲】</li>
@@ -217,149 +217,39 @@
                 <div class="col-8 pl-0 my-0">
                     <!-- 华语歌单-->
                     <ul class="list-unstyled text-muted" id="hy">
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">周杰伦-简单爱<span class="small badge badge-warning ">独家</span></span>
+                        <li class="d-flex py-1" v-for="item in xgsf_hy">
+                            <span class="mr-auto">{{item.name}}<span class="small badge badge-warning ">独家</span></span>
                             <span class="play align-self-center mx-1 d-none"></span>
                             <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:27</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">张惠妹、林忆莲 - 双影【如懿传电视剧主题曲】<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:35</span>
-                        </li>
-                        <li class="d-flex justify-content-between py-1">
-                            <span class="">裘海正、好妹妹 - 爱我的人和我爱的人 <span class="small badge badge-warning">独家</span></span>
-                            <span>04:47</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">GAI - 豁得凶 <span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:24</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">金志文 - 乱世王者【乱世王者腾讯游戏同名主题曲】 <span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:48</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">乌兰托娅 - 花桥流水<span class="small badge badge-warning">独家</span></span><span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:33</span>
+                            <span>{{item.duration}}</span>
                         </li>
                     </ul>
                     <!--欧美歌单-->
                     <ul class="list-unstyled text-muted" id="om">
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Calvin Harris、Sam Smith - Promises<span class="small badge badge-warning">独家</span></span>
+                        <li class="d-flex py-1" v-for="item in xgsf_om">
+                            <span class="mr-auto">{{item.name}}<span class="small badge badge-warning">独家</span></span>
                             <span class="play align-self-center mx-1 d-none"></span>
                             <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:33</span>
+                            <span>{{item.duration}}</span>
                         </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Marshmello、Bastille - Happier<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:35</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Camila Cabello、Swae Lee - Real Friends <span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:47</span>
-                        </li>
-                        <li class="d-flex justify-content-between py-1">
-                            <span>Cat Power、Lana Del Rey - Woman<span class="small badge badge-warning">独家</span></span>
-                            <span>03:24</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Jess Glynne - All I Am<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:48</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Janet Jackson、Daddy Yankee - Made For Now<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:33</span>
-                        </li>
-
                     </ul>
                     <!-- 韩国歌单-->
                     <ul class="list-unstyled text-muted" id="hg">
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">SUPER JUNIOR-D&E - 머리부터 발끝까지 ( Bout you)<span class="small badge badge-warning">独家</span></span>
+                        <li class="d-flex py-1" v-for="item in xgsf_hg">
+                            <span class="mr-auto">{{item.name}}<span class="small badge badge-warning">独家</span></span>
                             <span class="play align-self-center mx-1 d-none"></span>
                             <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:33</span>
+                            <span>{{item.duration}}</span>
                         </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">孝琳 - BAE<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:35</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Ken - 늦은 후회 (The Late Regret)<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:47</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">梁耀燮 - 그래도 나 (即使如此我也)【一起吃饭吧3 OST】<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:24</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Seventeen - A-TEEN<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:48</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">Red Velvet - Power Up<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:33</span>
-                        </li>
-
                     </ul>
                     <!-- 日本歌单-->
                     <ul class="list-unstyled text-muted" id="rb">
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">YURiKA - ふたりの羽根【轻羽飞扬片头曲】<span class="small badge badge-warning">独家</span></span>
+                        <li class="d-flex py-1" v-for="item in xgsf_rb">
+                            <span class="mr-auto">{{item.name}}<span class="small badge badge-warning">独家</span></span>
                             <span class="play align-self-center mx-1 d-none"></span>
                             <span class="load align-self-center mx-2 d-none"></span>
-                            <span>03:33</span>
+                            <span>{{item.duration}}</span>
                         </li>
-                        <li class="d-flex justify-content-between py-1">
-                            <span>大原ゆい子 - ハイステッパー【轻羽飞扬片尾曲】<span class="small badge badge-warning">独家</span></span>
-                            <span>04:35</span>
-                        </li>
-                        <li class="d-flex py-1">
-                            <span class="mr-auto">ClariS - ねがい<span class="small badge badge-warning">独家</span></span>
-                            <span class="play align-self-center mx-1 d-none"></span>
-                            <span class="load align-self-center mx-2 d-none"></span>
-                            <span>04:47</span>
-                        </li>
-                        <li class="d-flex justify-content-between py-1">
-                            <span>亜咲花 - Eternal Star【ISLAND片尾曲】<span class="small badge badge-warning">独家</span></span>
-                            <span>03:24</span>
-                        </li>
-                        <li class="d-flex justify-content-between py-1">
-                            <span>乃木坂46 - ジコチューで行こう!<span class="small badge badge-warning">独家</span></span>
-                            <span>03:48</span>
-                        </li>
-                        <li class="d-flex justify-content-between py-1">
-                            <span>Da-iCE - BET<span class="small badge badge-warning">独家</span></span>
-                            <span>03:33</span>
-                        </li>
-
                     </ul>
                 </div>
                 <div class="col-4">
@@ -699,14 +589,32 @@
                 <div class="col-auto my-3"><a href="#" class="small text-dark">漫漫看漫画</a></div>
             </div>
         </div>
-        
     </section>
+    <div>
+        <div class="row">
+            <a href="" class="bg-danger col-auto">精选<br>歌单</a>
+        </div>
+        <div class="row">
+            <a href="" class="col-auto">新歌<br>首发</a>
+        </div>
+        <div class="row">
+            <a href="" class="col-auto">热门<br>电台</a>
+        </div>
+        <div class="row">
+            <a href="" class="col-auto">电台<br>合作</a>
+        </div>
+        <div class="row">
+            <a href="" class="col-auto">友情<br>链接</a>
+        </div>
+    </div>
     <footer id="footer"></footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 </html>

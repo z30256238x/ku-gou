@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>歌单</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/playlist.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="section">
+        <div class="container">
+            <div class="row">
+                <div class="col small">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white pl-0">
+                            <li class="breadcrumb-item">
+                                <a href="#">我的位置</a>
+                            </li>
+                            <li class="breadcrumb-item ">
+                                <a href="#" class="text-dark">首页</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#" class="text-dark">精选辑</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#" class="text-dark">分手季:余生还长，你千万别对爱情失望</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 small border-right">
+                    <img src="img/playlist/pl01.jpg" alt="" class="w-100">
+                    <a href="#" class="btn btn-primary px-4 rounded my-2">分享</a>
+                    <div class="">
+                        <span class="text-muted">名称：</span><span>分手季：余生还长，你千万别对爱情失望</span><br>
+                        <span class="text-muted">创始人：</span><span>散席</span><br>
+                        <span class="text-muted">心情：</span><span>淡淡的感伤</span><br>
+                        <span class="text-muted">更新时间：</span><span>2018-08-29</span><br>
+                        <span class="text-muted mt-2 d-inline-block">简介：</span><span>
+                        看到那些分手的情侣，你也对自己的感情质疑过吧？那些让你难以理解的分开，不过是两个人爱不到最后的体面。
+可是，相爱的人也有很多，你不必因为别人的离别而感到难过，也不必因为别人的爱情而感到沮丧。你要知道，那些 " 爱你就像爱生命 " 的美好和那些 " 陪你到最后 " 的拥抱依旧存在。希望你早日遇见对的人，希望对的人也是爱你的人。
+                    </span>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="small font-weight-bold">&lt;分手季：余生还长，你千万别对爱情失望&gt; - 歌曲列表</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col small d-flex align-items-center border-bottom ml-2">
+                            <input type="checkbox" class="checkBox_style mr-2"><span>全选</span><button class="btn btn-primary ml-auto py-1 my-2">播放全部</button>
+                        </div>
+                    </div>
+                    <div class="row py-1 cursor-p" v-for="(item,i) in playlist">
+                        <div class="col ml-2 small d-flex align-items-center">
+                            <input type="checkbox" class="checkBox_style"> <span class="mx-3">{{i+1|numFilter}}</span> <span>{{item.name}}</span>
+                            <span class="play ml-auto mr-3"></span><span class="share"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/playlist.js"></script>
+</body>
+</html>

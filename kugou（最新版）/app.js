@@ -8,5 +8,8 @@ app.use(express.static("public"));
 //引入中间件bodyParser
 const bodyParser=require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
-//引入路由器；
-////引入路由器；//引入路由器；//引入路由器；//引入路由器；//引入路由器；//引入路由器；//引入路由器；//引入路由器；
+//引入路由器;
+var index=require("./routes/index");
+app.use("/index",index)
+var playlist=require("./routes/playlist");
+app.use("/playlist",playlist);
